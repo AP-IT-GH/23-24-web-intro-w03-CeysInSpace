@@ -22,76 +22,87 @@
       defer
     ></script>
   </head>
+  <style>
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    th,
+    td {
+      border: 1px solid black;
+      padding: 8px;
+      text-align: left;
+    }
+    thead th {
+      background-color: #f2f2f2;
+    }
+  </style>
   <body>
-    <table>
     <main>
-      <thead>
-        <tr>
-          <th scope="col"></th>
-          <th scope="col">Beginner</th>
-          <th scope="col"> pro 1</th>
-          <th scope="col"> pro 2</th>
-          <th scope="col"> reseller</th>
-        </tr>
-        <tr>
-            <th scope="col"> </th>
-        <th scope="col"> 5,99&euro;</th>
-        <th scope="col" >7,99&euro;</th>
-        <th scope="col" >11,99&euro;</th>
-        <th scope="col"> 19,99&euro;</th>
-        </tr>
-        
-        <tr>
-          <td scope="row"> </td>
-          <th scope="row"> webruimte</th>
-          <td scope="row"> 4 GB</td>
-          <td scope="row" > 6 GB</td>
-          <td scope="row" > 8 GB</td>
-          <td scope="row" > 12 GB</td>  
-          </tr>
-          
+      <table>
+        <thead>
           <tr>
-            <th scope="row"></th>
-            <th scope="row"> bandbreedte</th>
-            <td scope="row"> 25 GB</td>
-            <td scope="row">50 GB</td>
-            <td scope="row">75 GB</td>
-            <td scope="row">100 GB</td>
-
+            <th scope="col"></th>
+            <th scope="col">Beginner</th>
+            <th scope="col">pro 1</th>
+            <th scope="col">pro 2</th>
+            <th scope="col">reseller</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">Prijs</th>
+            <td>5,99&euro;</td>
+            <td>7,99&euro;</td>
+            <td>11,99&euro;</td>
+            <td>19,99&euro;</td>
           </tr>
 
           <tr>
-            <th scope="row"></th>
+            <th scope="row">webruimte</th>
+            <td>4 GB</td>
+            <td>6 GB</td>
+            <td>8 GB</td>
+            <td>12 GB</td>
+          </tr>
+
+          <tr>
+            <th scope="row">Bandbreedte</th>
+            <td>25 GB</td>
+            <td>50 GB</td>
+            <td>75 GB</td>
+            <td>100 GB</td>
+          </tr>
+
+          <tr>
             <th scope="row">websites</th>
-            <td scope="row">1</td>
-            <td scope="row">1</td>
-            <td scope="row">3</td>
-            <td scope="row">10</td>
+            <td>1</td>
+            <td>1</td>
+            <td>3</td>
+            <td>10</td>
           </tr>
-          
+
           <tr>
-            <th scope="row"></th>
-            <th scope="row"> MySQL databases</th>
-            <td scope="row">5</td>
-            <td scope="row">10</td>
-            <td scope="row">20</td>
-            <td scope="row">50</td>
+            <th scope="row">MySQL databases</th>
+            <td>5</td>
+            <td>10</td>
+            <td>20</td>
+            <td>50</td>
           </tr>
-          <tr> 
-            <th scope="row"></th>
-            <th scope="row"> domeinnaam</th>
-            <td scope="row">1</td>
-            <td scope="row">onbeperkt</td>
-            <td scope="row">onbeperkt</td>
-            <td scope="row">onbeperkt</td>
-
+          <tr>
+            <th scope="row">Domeinnaam</th>
+            <td>1</td>
+            <td>onbeperkt</td>
+            <td>onbeperkt</td>
+            <td>onbeperkt</td>
           </tr>
-      </thead>
-
-      
-    </table>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td></td>
+          </tr>
+        </tfoot>
+      </table>
     </main>
-
-    
   </body>
 </html>
