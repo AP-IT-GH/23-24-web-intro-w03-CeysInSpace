@@ -29,10 +29,14 @@
     }
     th,
     td {
-      border: 1px solid black;
+      border: 1px solid gray;
       padding: 8px;
       text-align: left;
       -webkit-text-fill-color: black;
+    }
+    th[scope="col"] {
+      background-color: black;
+      -webkit-text-fill-color: white;
     }
   </style>
   <body>
@@ -42,8 +46,8 @@
           <tr>
             <th scope="col"></th>
             <th scope="col">kolom één</th>
-            <th>kolom twee</th>
-            <th>kolom drie</th>
+            <th scope="col">kolom twee</th>
+            <th scope="col">kolom drie</th>
           </tr>
 
           <tr>
@@ -51,6 +55,18 @@
             <td>zaterdag 4 februari 11:00-14:00</td>
             <td>zaterdag 4 maart 11:00 - 14:00</td>
             <td>zaterdag 18 maart 11:00 - 14:00</td>
+          </tr>
+          <tr>
+            <th scope="row">rij twee</th>
+            <td>zaterdag 8 april 11:00 - 13:00</td>
+            <td>zaterdag 6 mei 11:00 - 13:00</td>
+            <td>zaterdag 20 mei 11:00 - 13:00</td>
+          </tr>
+          <tr>
+            <th scope="row">rij drie</th>
+            <td>zaterdag 8 april 11:00</td>
+            <td>zaterdag 6 mei 11:00 - 13:00</td>
+            <td>zaterdag 20 mei 11:00 - 13:00</td>
           </tr>
         </thead>
       </table>
