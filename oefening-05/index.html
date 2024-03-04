@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nl-BE">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>caption</title>
+    <title>Oefening 05</title>
     <!-- Required meta tags -->
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -22,18 +22,89 @@
       defer
     ></script>
   </head>
-  <style></style>
+  <style>
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    th,
+    td {
+      border: 1px solid black;
+      padding: 8px;
+      text-align: left;
+    }
+    tr:nth-child(even) td {
+      background-color: grey;
+    }
+    tr:nth-child(odd) td {
+      background-color: white;
+    }
+
+    .table-title {
+      text-decoration: underline;
+      margin-top: 20px;
+      font-size: 18px;
+    }
+  </style>
 
   <body>
     <main>
+      <caption>
+        Netflix (in miljoenen)
+      </caption>
+      <h2 class="table-title">Bedrijfsresultaat</h2>
       <table>
         <thead>
           <tr>
-            <th scope="row">Jaar</th>
-            <th scope="row">Omzet</th>
-            <th scope="row">Netto</th>
+            <th scope="col">Jaar</th>
+            <th scope="col">Omzet</th>
+            <th scope="col">Netto</th>
           </tr>
-          <tr></tr>
+          <tr>
+            <th scope="row">2013</th>
+            <td>&dollar;4735</td>
+            <td>&dollar;112</td>
+          </tr>
+          <tr>
+            <th scope="row">2014</th>
+            <td>&dollar;5505</td>
+            <td>&dollar;267</td>
+          </tr>
+          <tr>
+            <th scope="row">2015</th>
+            <td>&dollar;6780</td>
+            <td>&dollar;123</td>
+          </tr>
+          <tr>
+            <th scope="row">2016</th>
+            <td>&dollar;8830</td>
+            <td>&dollar;187</td>
+          </tr>
+          <tr>
+            <th scope="row">2017</th>
+            <td>&dollar;11.693</td>
+            <td>&dollar;559</td>
+          </tr>
+          <tr>
+            <th scope="row">2018</th>
+            <td>&dollar;15.794</td>
+            <td>&dollar;1211</td>
+          </tr>
+          <tr>
+            <th scope="row">2019</th>
+            <td>&dollar;20.156</td>
+            <td>&dollar;1867</td>
+          </tr>
+          <tr>
+            <th scope="row">2020</th>
+            <td>&dollar;24.996</td>
+            <td>&dollar;2761</td>
+          </tr>
+          <tr>
+            <th scope="row">Totaal</th>
+            <td>&dollar;98.489</td>
+            <td>&dollar;7087</td>
+          </tr>
 
           <tr></tr>
         </thead>
