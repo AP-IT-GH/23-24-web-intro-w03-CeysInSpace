@@ -22,62 +22,56 @@
       defer
     ></script>
   </head>
-  <style>
-    table {
-        width: 100%;
-        border-collapse: collapse;
-    }
-    th , td {
-        text-align: center;
-        border: 1px solid black;
-        padding: 8px;
-    }
-    td.description {
-        text-align: left;
-    }
-    td.amount {text-align: right;}
-  </style>
+  
   <body>
-    <main></main>
-    <table>
+    <main>
+    <table class="table caption-top">
+      <caption>Overzicht boekhouding</caption>
 
     <thead>
       <tr>
-        <th scope="col">Bedrijf</th>
-        <th scope="col">Omschrijving</th>
-        <th scope="col">In</th>
-        <th scope="col">Uit</th>
+        <th class="text-center" scope="col">Bedrijf</th>
+        <th class="text-center" scope="col">Omschrijving</th>
+        <th class="text-center" scope="col">In</th>
+        <th class="text-center" scope="col">Uit</th>
       </tr>
-
-      <tr>
-        <th scope="row">Bike Center</th>
-        <td>e-mail nieuwsbrief</td>
-        <td>&euro;350</td>
-        <td></td>
-      </tr>
-      <tr>
-      <th scope="row"> Bakkerij</th>
-      <td>webhosting</td>
-      <td></td>
-      <td>&euro;1500</td>
-    </tr>
-
-    <tr> <th scope="row"> Architectuur</th>
-    <td>webdesign</td>
-    <td>&euro;5750</td>
-    <td></td>
-</tr>
-
-<tr>
-    <th scope="row">Krantenwinkel</th>
-    <td>Domeinnaam</td>
-    <td></td>
-    <td>&euro;45</td>
-</tr>
-
-
-
-    </table>
     </thead>
+    <tbody>
+      <tr>
+        <th class="text-start" scope="row">Bike center</th>
+        <td class="text-start">e-mail niewsbrief</td>
+        <td class="text-end">350 &euro;</td>
+        <td class="text-end">&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="text-start" scope="row">Bakkerij</th>
+        <td class="text-start">webhosting</td>
+        <td class="text-end">&nbsp;</td>
+        <td class="text-end">1500 &euro;</td>
+      </tr>
+      <tr>
+        <th class="text-start" scope="row">Architectuur</th>
+        <td class="text-start">webdesign</td>
+        <td class="text-end">5750 &euro;</td>
+        <td class="text-end">&nbsp;</td>
+      </tr>
+      <tr>
+        <th class="text-start" scope="row">Krantenwinkel</th>
+        <td class="text-start">domeinnaam</td>
+        <td class="text-end">&nbsp;</td>
+        <td class="text-end">45 &euro;</td>
+      </tr>
+    </tbody>
+    <tfoot>
+      <tr>
+        <td class="text-start">&nbsp;</td>
+        <td class="text-start">&nbsp;</td>
+        <td class="text-end">6100 &euro;</td>
+        <td class="text-end">1545 &euro;</td>
+      </tr>
+    </tfoot>
+  </table>
+</thead>
+  </main>
   </body>
 </html>

@@ -22,43 +22,26 @@
       defer
     ></script>
   </head>
-  <style>
-    table {
-      width: 100%;
-      border-collapse: collapse;
-    }
-    th,
-    td {
-      border: 1px solid black;
-      padding: 8px;
-      text-align: left;
-    }
-    tr:nth-child(even) td {
-      background-color: grey;
-    }
-    tr:nth-child(odd) td {
-      background-color: white;
-    }
-
-    .table-title {
-      text-decoration: underline;
-      margin-top: 20px;
-      font-size: 18px;
-    }
-  </style>
+  <style></style>
 
   <body>
     <main>
-      <caption>
-        Netflix (in miljoenen)
-      </caption>
-      <h2 class="table-title">Bedrijfsresultaat</h2>
-      <table>
+      <table class="table table-striped caption-top">
+        <caption>
+          Netflix (in miljoenen)
+        </caption>
+        <h2 class="table-title">Bedrijfsresultaat</h2>
+
         <thead>
           <tr>
-            <th scope="col">Jaar</th>
-            <th scope="col">Omzet</th>
-            <th scope="col">Netto</th>
+            <th rowspan="2">Jaar</th>
+            <th colspan="2">Bedrijfsresultaat</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th>Omzet</th>
+            <th>Netto</th>
           </tr>
           <tr>
             <th scope="row">2013</th>
@@ -100,14 +83,16 @@
             <td>&dollar;24.996</td>
             <td>&dollar;2761</td>
           </tr>
+        </tbody>
+        <tfoot>
           <tr>
             <th scope="row">Totaal</th>
             <td>&dollar;98.489</td>
             <td>&dollar;7087</td>
           </tr>
+        </tfoot>
 
-          <tr></tr>
-        </thead>
+        <tr></tr>
       </table>
     </main>
   </body>
